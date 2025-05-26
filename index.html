@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rexri - Bí quyết làm đẹp chuẩn Hàn từ AucoCosmetics</title>
+    <link rel="icon" href="./Images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "blue-primary": "#1e40af",
+              "blue-secondary": "#3b82f6",
+              "blue-light": "#dbeafe",
+              "blue-dark": "#1e3a8a",
+              cream: "#f5f1e8",
+              "pharma-blue": "#2563eb",
+              "light-blue-bg": "#e0f2fe",
+              "sky-blue": "#87CEEB",
+              "deep-blue": "#1e3a8a",
+              "nano-blue": "#3b82f6",
+              golden: "#fbbf24",
+              "navy-blue": "#1e293b",
+              "light-cream": "#fffbeb",
+            },
+            fontFamily: {
+              cursive: ["Dancing Script", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+
+      /* Subtle and elegant animations */
+      @keyframes gentleGlow {
+        0%,
+        100% {
+          text-shadow: 0 0 5px rgba(251, 191, 36, 0.3);
+          transform: scale(1);
+        }
+        50% {
+          text-shadow: 0 0 15px rgba(251, 191, 36, 0.6);
+          transform: scale(1.02);
+        }
+      }
+
+      @keyframes subtleFloat {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-3px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes shimmerEffect {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+      }
+
+      /* Responsive font sizes and spacing */
+      @media (max-width: 640px) {
+        .responsive-text-sm {
+          font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+        }
+        .responsive-text-base {
+          font-size: clamp(0.85rem, 3vw, 1rem);
+        }
+        .responsive-text-lg {
+          font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+        }
+        .responsive-text-2xl {
+          font-size: clamp(1.2rem, 5vw, 1.5rem);
+        }
+        .responsive-text-3xl {
+          font-size: clamp(1.5rem, 6vw, 1.8rem);
+        }
+        .responsive-logo {
+          width: clamp(32px, 8vw, 40px);
+          height: clamp(32px, 8vw, 40px);
+        }
+        .responsive-button {
+          padding: clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px);
+          min-width: clamp(100px, 25vw, 120px);
+        }
+      }
+
+      /* iPad-specific styles (768px - 1024px) */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .responsive-text-sm {
+          font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+        }
+        .responsive-text-base {
+          font-size: clamp(0.9rem, 2vw, 1.1rem);
+        }
+        .responsive-text-lg {
+          font-size: clamp(1rem, 2.2vw, 1.2rem);
+        }
+        .responsive-text-2xl {
+          font-size: clamp(1.5rem, 3vw, 1.8rem);
+        }
+        .responsive-text-3xl {
+          font-size: clamp(1.8rem, 3.5vw, 2rem);
+        }
+        .responsive-logo {
+          width: clamp(40px, 5vw, 48px);
+          height: clamp(40px, 5vw, 48px);
+        }
+        .responsive-button {
+          padding: clamp(8px, 1.5vw, 10px) clamp(14px, 2.5vw, 18px);
+          min-width: clamp(120px, 20vw, 140px);
+        }
+      }
+
+      /* Laptop-specific styles (1024px and above) */
+      @media (min-width: 1024px) {
+        .responsive-text-sm {
+          font-size: clamp(0.85rem, 1.2vw, 1rem);
+        }
+        .responsive-text-base {
+          font-size: clamp(1rem, 1.5vw, 1.2rem);
+        }
+        .responsive-text-lg {
+          font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+        }
+        .responsive-text-2xl {
+          font-size: clamp(1.8rem, 2.5vw, 2rem);
+        }
+        .responsive-text-3xl {
+          font-size: clamp(2rem, 3vw, 2.2rem);
+        }
+        .responsive-logo {
+          width: clamp(48px, 4vw, 56px);
+          height: clamp(48px, 4vw, 56px);
+        }
+        .responsive-button {
+          padding: clamp(10px, 1.2vw, 12px) clamp(16px, 2vw, 20px);
+          min-width: clamp(140px, 15vw, 160px);
+        }
+      }
+
+      /* Gentle discount glow effect */
+      .discount-glow {
+        animation: gentleGlow 3s ease-in-out infinite;
+      }
+
+      /* Subtle floating animation */
+      .floating-animation {
+        animation: subtleFloat 4s ease-in-out infinite;
+      }
+
+      /* Fade in animation */
+      .fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+      }
+
+      /* Gradient backgrounds */
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e40af 0%,
+          #3b82f6 50%,
+          #60a5fa 100%
+        );
+      }
+
+      .blue-gradient {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3b82f6 50%,
+          #60a5fa 100%
+        );
+      }
+
+      .golden-gradient {
+        background: linear-gradient(
+          135deg,
+          #fbbf24 0%,
+          #f59e0b 50%,
+          #d97706 100%
+        );
+      }
+
+      .header-gradient {
+        background: linear-gradient(
+          135deg,
+          #1e293b 0%,
+          #1e40af 50%,
+          #3b82f6 100%
+        );
+      }
+
+      .cream-gradient {
+        background: linear-gradient(
+          135deg,
+          #f5f1e8 0%,
+          #fef3c7 50%,
+          #f5f1e8 100%
+        );
+      }
+
+      /* Subtle card hover effects */
+      .benefit-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .comparison-card {
+        transition: all 0.3s ease;
+      }
+
+      .comparison-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      /* Enhanced form inputs */
+      .form-input {
+        transition: all 0.3s ease;
+      }
+
+      .form-input:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      }
+
+      /* Enhanced button */
+      .buy-button {
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .buy-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(59, 130, 246, 0.3);
+      }
+
+      .buy-button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .buy-button:hover::before {
+        left: 100%;
+      }
+
+      /* Enhanced countdown circles */
+      .countdown-circle {
+        transition: all 0.3s ease;
+      }
+
+      .countdown-circle:hover {
+        transform: scale(1.05);
+      }
+
+      /* Cursive text styling */
+      .cursive-text {
+        font-family: "Dancing Script", cursive;
+      }
+
+      .underline-custom {
+        position: relative;
+      }
+
+      .underline-custom::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: currentColor;
+        border-radius: 2px;
+      }
+
+      /* Pulse glow effect */
+      .pulse-glow {
+        animation: pulseGlow 2s infinite;
+      }
+
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Intersection observer trigger */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease;
+      }
+
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Subtle shimmer effect for special elements */
+      .shimmer {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        background-size: 200% 100%;
+        animation: shimmerEffect 3s infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!-- Enhanced Header -->
+    <header
+      class="bg-blue-800 text-white px-2 sm:px-4 py-2 fixed top-0 w-full z-50 shadow-lg"
+    >
+      <div
+        class="w-full max-w-7xl mx-auto flex items-center justify-between flex-nowrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 px-2 sm:px-4"
+      >
+        <!-- Logo + Rexri + Freeship -->
+        <div
+          class="flex flex-col items-center min-w-0 flex-shrink-0 floating-animation"
+        >
+          <div class="flex items-center gap-1 sm:gap-2 lg:gap-3">
+            <img
+              src="./Images/logo.png"
+              alt="Rexri Logo"
+              class="responsive-logo object-contain"
+            />
+            <span class="text-yellow-300 font-semibold responsive-text-lg"
+              >Rexri</span
+            >
+          </div>
+          <div
+            class="flex items-center text-white/80 mt-0.5 sm:mt-1 responsive-text-sm"
+          >
+            ✈️ <span class="ml-1">Freeship toàn quốc</span>
+          </div>
+        </div>
+
+        <!-- Enhanced Discount Section with Gentle Glow -->
+        <div class="text-center min-w-0 flex-shrink discount-glow">
+          <span class="responsive-text-sm sm:responsive-text-base"
+            >GIẢM GIÁ ĐẾN</span
+          ><br />
+          <span
+            class="font-bold text-yellow-300 responsive-text-2xl sm:responsive-text-3xl"
+            >50%</span
+          >
+        </div>
+
+        <!-- Enhanced Button -->
+        <div class="min-w-0 flex-shrink-0">
+          <a
+            href="#order-section"
+            class="bg-white text-blue-800 font-semibold rounded-md responsive-button text-sm sm:text-base shadow-md hover:bg-blue-100 transition-all duration-300 whitespace-nowrap text-center hover:shadow-lg hover:-translate-y-0.5"
+          >
+            NHẬN ƯU ĐÃI
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+      <section class="w-full animate-on-scroll">
+        <img
+          src="./Images/rexri-creative-line.jpg"
+          alt="Banner 1"
+          class="w-full object-cover"
+        />
+        <img
+          src="./Images/gift-box-rexri.jpg"
+          alt="Banner 2"
+          class="w-full object-cover"
+        />
+      </section>
+    </main>
+
+    <!-- SÁU YẾU TỐ KÍCH THÍCH LÀM TỔN THƯƠNG DA -->
+    <section class="animate-on-scroll">
+      <div class="w-full max-w-6xl mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold mb-8 text-center text-blue-800">
+          SÁU YẾU TỐ KÍCH THÍCH LÀM TỔN THƯƠNG DA
+        </h2>
+        <div class="space-y-4">
+          <!-- Card 1: Lửa -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+              >
+                <img
+                  src="./Images/da-bi-bong.jpg"
+                  alt="Woman applying skincare"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Lửa : Da xỉn màu có nếp nhăn
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Khô -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+                style="animation-delay: 0.2s"
+              >
+                <img
+                  src="./Images/da-kho-1.webp"
+                  alt="Woman touching face"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Khô : Khô và thô ráp da có tế bào chết
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Nước bẩn -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+                style="animation-delay: 0.4s"
+              >
+                <img
+                  src="./Images/nuoc-ban.webp"
+                  alt="Woman touching hair"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Nước bẩn : Da sưng và bị viêm
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4: Nhiệt độ -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+                style="animation-delay: 0.6s"
+              >
+                <img
+                  src="./Images/nhiet-do.png"
+                  alt="Person exercising"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Nhiệt độ : Nó gây ra lão hóa nhiệt bởi gây tổn hại ở nhiệt độ
+                cao. -> Da không có sức mạnh và độ đàn hồi
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5: Lạnh -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+                style="animation-delay: 0.8s"
+              >
+                <img
+                  src="./Images/lanh.jpg"
+                  alt="Person exercising"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Lạnh : Nó gây ra sự thiếu dinh dưỡng bằng cách ngăn ngừa máu từ
+                tuần hoàn như đông cứng. -> Da thiếu sức sống và da nhăn nheo
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6: Gió -->
+          <div
+            class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center space-x-4 benefit-card"
+          >
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden bg-gray-100 floating-animation"
+                style="animation-delay: 1s"
+              >
+                <img
+                  src="./Images/gio.png"
+                  alt="Person exercising"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+                Gió :Khi gió xuyên qua, nó phân tán năng lượng và tạo ra nhiệt,
+                mà gây viêm -> Nhạy cảm và dễ dàng da bị kích thích
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REXRI CREATIVE TONER -->
+    <div class="bg-cream p-6 space-y-6 animate-on-scroll">
+      <div class="text-center">
+        <h1
+          class="text-pharma-blue text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight"
+        >
+          REXRI CREATIVE TONER
+        </h1>
+      </div>
+
+      <div class="bg-light-blue-bg rounded-2xl p-6 space-y-4 shimmer">
+        <div class="text-center">
+          <p class="text-gray-700 text-md leading-relaxed text-justify">
+            <span class="font-bold text-gray-800">Rexri Creative Toner</span> là
+            sản phẩm toner đến từ thương hiệu
+            <span class="font-bold text-gray-800">Rexri Hàn Quốc.</span> Sản
+            phẩm được chiết xuất từ các thành phần thiên nhiên lành tính, mang
+            lại nhiều công dụng vượt trội cho làn da, giúp da khỏe mạnh, rạng
+            rỡ.
+          </p>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden">
+          <img
+            src="./Images/anh-san-pham-3.jpg"
+            alt="Scientists working in laboratory"
+            class="w-full h-48 sm:h-56 lg:h-64 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ĐỘT PHÁ VƯỢT BẬC -->
+    <div
+      class="container mx-auto px-4 py-6 max-w-md lg:max-w-2xl animate-on-scroll"
+    >
+      <div class="text-center mb-8">
+        <p class="text-gray-600 text-sm sm:text-base mb-2">BƯỚC TIẾN</p>
+        <h1
+          class="text-deep-blue text-2xl sm:text-3xl lg:text-4xl font-bold mb-3"
+        >
+          ĐỘT PHÁ VƯỢT BẬC
+        </h1>
+        <p class="text-gray-700 text-sm sm:text-base">
+          SO VỚI <span class="font-semibold">SẢN PHẨM THÔNG THƯỜNG</span>
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+        <!-- Nano Collagen Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg benefit-card">
+          <div class="flex justify-center mb-4">
+            <video class="w-full max-w-xl rounded-lg shadow-lg" controls>
+              <source src="./Images/video-san-pham-1.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+          </div>
+
+          <div class="bg-gray-800 text-white text-center py-2 rounded-lg mb-4">
+            <p class="font-bold">REXRI CREATIVE SERUM</p>
+          </div>
+
+          <div class="text-gray-700 leading-relaxed space-y-2">
+            <ul>
+              <li>
+                Chiết xuất táo tàu giúp loại bỏ tế bào sắc tố, tế bào da chết
+              </li>
+              <li>Cùng với thảo dược độ ẩm cao</li>
+              <li>
+                Chiết xuất Portulaca :Tác dụng kháng khuẩn, dưỡng ẩm và giúp an
+                thần
+              </li>
+              <li>Chiết xuất đào : Ngăn ngừa da khỏi sự lão hóa</li>
+              <li>Có tác dụng làm trắng và giảm nếp nhăn</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Regular Collagen Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg benefit-card">
+          <div class="flex justify-center mb-4">
+            <video class="w-full max-w-xl rounded-lg shadow-lg" controls>
+              <source src="./Images/video-san-pham-2.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ thẻ video.
+            </video>
+          </div>
+
+          <div class="bg-gray-600 text-white text-center py-2 rounded-lg mb-4">
+            <p class="font-bold">REXRI CREATIVE SERUM</p>
+          </div>
+
+          <div class="text-gray-700 leading-relaxed space-y-2">
+            <ul>
+              <li>
+                Walnut extract : Làm sáng bóng bề mặt và giữ ẩm bên trong da
+              </li>
+              <li>Eucommia : Giúp kết cấu của da bạn gọn gàng và khỏe mạnh</li>
+              <li>Huyết thanh giúp da tươi mới, sống động</li>
+              <li>Tác dụng làm trắng da, cải thiện nếp nhăn</li>
+              <li>Làm mềm thô da</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-8"></div>
+    </div>
+
+    <!-- Giới thiệu sản phẩm -->
+    <div class="blue-gradient text-white animate-on-scroll">
+      <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <div class="text-center mb-8">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
+            REXRI CREATIVE TONER
+          </h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="space-y-6">
+            <div class="flex justify-center floating-animation">
+              <img src="./Images/rexri_creative_toner.jpg" alt="" />
+            </div>
+
+            <div
+              class="leading-relaxed space-y-3 max-w-md mx-auto lg:mx-0 text-left"
+            >
+              <p>
+                Chiết xuất rễ Rehmannia glutinosa, chiết xuất rễ cây cimicifuga
+                dahurica, chiết xuất vỏ cam quýt, chiết xuất rễ cây bạch chỉ
+                tenuissima, chiết xuất rễ cây xương cựa, panax
+              </p>
+              <p>
+                Chiết xuất từ rễ nhân sâm, butylene glycol, rượu, glycerin,
+                betaine, nước, peg/ppg-17/6 copolyme
+              </p>
+              <p>
+                Chiết xuất rễ cây cnidium officinale, chiết xuất rễ cây bạch
+                chỉ, ophiopogon
+              </p>
+              <p>
+                Chiết xuất rễ cây japonicus, chiết xuất rễ cây dioscorea
+                opposita (khoai lang), paeonia albiflora
+              </p>
+              <p>
+                Chiết xuất rễ cây, chiết xuất rễ cây saposhnikovia divaricata,
+                chiết xuất hạt juglans regia (quả óc chó)
+              </p>
+              <p>
+                Chiết xuất theobroma cacao (ca cao), chiết xuất măng tây
+                lucidus, rễ cây acorus calamus
+              </p>
+              <p>
+                Chiết xuất, chiết xuất từ quả prunus persica (đào), chiết xuất
+                rễ cây atractyloides lancea
+              </p>
+              <p>
+                Chiết xuất lá eucommia ulmoides, biosaccharide gum-1, natri
+                hyaluronate, natto gôm, dextrin, gôm xanthan, glyceryl
+                polymethacrylat, bis-peg-18 metyl ete dimethyl silane, dầu thầu
+                dầu hydro hóa peg-60, carbomer, tromethamine,
+                ethylhexylglycerin, phenoxyetanol, dinatri edta, hương thơm
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="flex items-center space-x-4 bg-white bg-opacity-20 rounded-xl p-4 benefit-card"
+            >
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="./Images/walnut-extract.png" alt="" />
+              </div>
+              <div>
+                <p class="font-semibold">WALNUT EXTRACT</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center space-x-4 bg-white bg-opacity-20 rounded-xl p-4 benefit-card"
+            >
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="./Images/eucommia.png" alt="" />
+              </div>
+              <div>
+                <p class="font-semibold">EUCOMMIA</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center space-x-4 bg-white bg-opacity-20 rounded-xl p-4 benefit-card"
+            >
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="./Images/nhan-sam.png" alt="" />
+              </div>
+              <div>
+                <p class="font-semibold">NHÂN SÂM</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center space-x-4 bg-white bg-opacity-20 rounded-xl p-4 benefit-card"
+            >
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="./Images/huyet-thanh.png" alt="" />
+              </div>
+              <div>
+                <p class="font-semibold">HUYẾT THANH</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center space-x-4 bg-white bg-opacity-20 rounded-xl p-4 benefit-card"
+            >
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="./Images/japonicus.png" alt="" />
+              </div>
+              <div>
+                <p class="font-semibold">JAPONICUS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Những công dụng thần kỳ -->
+    <div class="golden-gradient text-white py-12 animate-on-scroll">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-8">
+          <h2 class="text-1xl sm:text-3xl lg:text-4xl font-bold">
+            NHỮNG CÔNG DỤNG THẦN KỲ CỦA<br />
+            REXRI CREATIVE SERUM
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="flex justify-center floating-animation">
+            <img src="./Images/rexri_creative_toner_6.webp" alt="" srcset="" />
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Làm sạch sâu lỗ chân lông: Toner giúp loại bỏ bụi bẩn, dầu thừa,
+                lớp trang điểm còn sót lại sau bước rửa mặt, giúp lỗ chân lông
+                thông thoáng, ngăn ngừa mụn.
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Cân bằng độ pH cho da: Toner giúp cân bằng độ pH của da, giúp da
+                khỏe mạnh và hấp thụ dưỡng chất tốt hơn.
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Cấp ẩm cho da: Toner giúp bổ sung độ ẩm cho da, giúp da mềm mại,
+                mịn màng.
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Se khít lỗ chân lông: Toner giúp se khít lỗ chân lông, giúp da
+                mịn màng, săn chắc hơn.
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Làm sáng da: Toner giúp làm sáng da, mờ thâm nám, tàn nhang.
+              </p>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div
+                class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"
+              ></div>
+              <p>
+                Chống lão hóa: Toner giúp tăng cường độ đàn hồi, săn chắc da,
+                ngăn ngừa nếp nhăn và lão hóa da.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tác động sau -->
+    <div
+      class="container mx-auto px-4 py-12 max-w-6xl relative z-10 animate-on-scroll"
+    >
+      <div class="text-center mb-12">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+        >
+          TÁC ĐỘNG SÂU
+        </h1>
+        <p class="text-deep-blue text-xl sm:text-2xl font-medium opacity-90">
+          CẢI THIỆN TỪ BẾN TRONG
+        </p>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"
+        ></div>
+      </div>
+
+      <div
+        class="bg-white bg-opacity-95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 p-4 lg:p-12">
+          <div class="lg:col-span-3 space-y-8">
+            <div
+              class="bg-white bg-opacity-50 rounded-2xl p-6 shadow-lg benefit-card"
+            >
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-bold text-gray-800 text-xl mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                  >
+                    Nước nấm thuốc
+                  </h3>
+                  <p class="text-gray-700 text-base leading-relaxed">
+                    Tăng cường khả năng tự tái tạo của da
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white bg-opacity-50 rounded-2xl p-6 shadow-lg benefit-card"
+            >
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center shadow-lg"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-bold text-gray-800 text-xl mb-3 bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent"
+                  >
+                    Đỗ quyên triết suất
+                  </h3>
+                  <p class="text-gray-700 text-base leading-relaxed">
+                    Tác dụng làm dịu da
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white bg-opacity-50 rounded-2xl p-6 shadow-lg benefit-card"
+            >
+              <div class="flex items-start space-x-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-600 rounded-xl flex items-center justify-center shadow-lg"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3
+                    class="font-bold text-gray-800 text-xl mb-3 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent"
+                  >
+                    Dầu hạt alba
+                  </h3>
+                  <p class="text-gray-700 text-base leading-relaxed">
+                    Cung cấp dinh dưỡng quan trọng cho da
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 flex items-center justify-center">
+            <div class="relative w-full max-w-sm floating-animation">
+              <div
+                class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative"
+              >
+                <img
+                  src="./Images/rexri_creative_cream.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white opacity-20 rounded-3xl"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      src="./Images/rexri-line-3-set.jpg"
+      alt=""
+      class="w-full animate-on-scroll"
+    />
+
+    <!-- Sở hữu sự khác biệt -->
+    <div class="container mx-auto max-w-4xl animate-on-scroll">
+      <div class="header-gradient text-white text-center py-8 px-6">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2">
+          DR PHARMA NANO COLLAGEN
+        </h1>
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold">
+          SỞ HỮU KHẢ NĂNG KHÁC BIỆT
+        </h2>
+      </div>
+
+      <div class="cream-gradient px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="benefit-card bg-white bg-opacity-80 rounded-2xl p-6 text-center shadow-lg"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg floating-animation"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="text-gray-700 text-sm leading-relaxed">
+              <p class="font-semibold mb-2">
+                Giảm bã nhờn, ngừa mụn, thu nhỏ lỗ chân lông
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="benefit-card bg-white bg-opacity-80 rounded-2xl p-6 text-center shadow-lg"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center shadow-lg floating-animation"
+                style="animation-delay: 0.2s"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75 0 2.55 1.17 4.83 3 6.315V21a.75.75 0 001.5 0v-2.685c1.17.585 2.535.935 4 .935s2.83-.35 4-.935V21a.75.75 0 001.5 0v-2.685c1.83-1.485 3-3.765 3-6.315 0-5.385-4.365-9.75-9.75-9.75zM12 18.75c-3.728 0-6.75-3.022-6.75-6.75S8.272 5.25 12 5.25s6.75 3.022 6.75 6.75-3.022 6.75-6.75 6.75z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="text-gray-700 text-sm leading-relaxed">
+              <p class="font-semibold mb-2">
+                Dưỡng ẩm, cải thiện tình trạng khô, mỏi, da, giúp môi và da luôn
+                hồng hào, căng mọng
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="benefit-card bg-white bg-opacity-80 rounded-2xl p-6 text-center shadow-lg"
+          >
+            <div class="flex justify-center mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center shadow-lg floating-animation"
+                style="animation-delay: 0.4s"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="text-gray-700 text-sm leading-relaxed">
+              <p class="font-semibold mb-2">
+                Tăng khả năng tái tạo da, loại bỏ tế bào da chết toàn bộ cơ thể
+                da mặt, môi, cánh tay, gót chân
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trẻ hóa thần tốc -->
+    <div
+      class="container mx-auto px-4 sm:px-4 py-6 sm:py-8 animate-on-scroll"
+    >
+      <div class="text-center mb-6 sm:mb-8">
+        <h1
+          class="text-gray-800 text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold mb-2 sm:mb-3"
+        >
+          DR PHARMA NANO COLLAGEN
+        </h1>
+        <h2
+          class="text-pharma-blue text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1 sm:mb-2"
+        >
+          TRẺ HOÁ THẦN TỐC
+        </h2>
+        <p
+          class="cursive-text underline-custom text-pharma-blue text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold"
+        >
+          sau 1 tuần
+        </p>
+      </div>
+
+      <div class="space-y-4 sm:space-y-6">
+        <!-- Bắt đầu -->
+        <div
+          class="comparison-card bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden"
+        >
+          <div class="flex">
+            <div class="w-3/5 p-3 sm:p-4 lg:p-6 flex items-center">
+              <div>
+                <div
+                  class="bg-pharma-blue text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md sm:rounded-lg font-bold text-xs sm:text-sm mb-2 sm:mb-3 inline-block"
+                >
+                  BẮT ĐẦU
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Da cháy xệ, xỉn màu, có nám và tàn nhang.
+                </p>
+              </div>
+            </div>
+            <div class="w-2/5 relative">
+              <img
+                src="./Images/bat-dau.webp"
+                alt="Before - Skin condition"
+                class="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-r-xl sm:rounded-r-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuần 1 -->
+        <div
+          class="comparison-card bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden"
+        >
+          <div class="flex">
+            <div class="w-2/5 relative">
+              <img
+                src="./Images/tuan-1.webp"
+                alt="After - Improved skin"
+                class="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-l-xl sm:rounded-l-2xl"
+              />
+            </div>
+            <div class="w-3/5 p-3 sm:p-4 lg:p-6 flex items-center">
+              <div>
+                <div
+                  class="bg-pharma-blue text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md sm:rounded-lg font-bold text-xs sm:text-sm mb-2 sm:mb-3 inline-block"
+                >
+                  TUẦN 1
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Da ẩm mượt hơn, nền da sáng đều màu, hồng hào rõ rệt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuần 2 -->
+        <div
+          class="comparison-card bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden"
+        >
+          <div class="flex">
+            <div class="w-3/5 p-3 sm:p-4 lg:p-6 flex items-center">
+              <div>
+                <div
+                  class="bg-pharma-blue text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md sm:rounded-lg font-bold text-xs sm:text-sm mb-2 sm:mb-3 inline-block"
+                >
+                  TUẦN 2
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Nám, tàn nhang giảm dần, nếp nhăn nông được làm đầy đặn, da có
+                  độ đàn hồi, căng mịn.
+                </p>
+              </div>
+            </div>
+            <div class="w-2/5 relative">
+              <img
+                src="./Images/tuan-2.webp"
+                alt="Before - Skin condition"
+                class="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-r-xl sm:rounded-r-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuần 3 -->
+        <div
+          class="comparison-card bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden"
+        >
+          <div class="flex">
+            <div class="w-2/5 relative">
+              <img
+                src="./Images/tuan-3.jpeg"
+                alt="After - Improved skin"
+                class="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-l-xl sm:rounded-l-2xl"
+              />
+            </div>
+            <div class="w-3/5 p-3 sm:p-4 lg:p-6 flex items-center">
+              <div>
+                <div
+                  class="bg-pharma-blue text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md sm:rounded-lg font-bold text-xs sm:text-sm mb-2 sm:mb-3 inline-block"
+                >
+                  TUẦN 3
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                  Da trắng hồng, đầy sức sống. Nấm, tàn nhang mờ rõ rệt. Nhan
+                  sắc tươi trẻ, rạng ngời.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-6 sm:h-8"></div>
+    </div>
+
+    <!-- Đặt hàng ngay nhận ưu đãi -->
+    <div id="order-section" class="gradient-bg py-12 animate-on-scroll">
+      <div class="container mx-auto px-4 max-w-md lg:max-w-lg">
+        <div class="text-center mb-8">
+          <h1
+            class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight"
+          >
+            ĐẶT HÀNG NGAY<br />
+            NHẬN ƯU ĐÃI
+          </h1>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 space-y-6 shimmer"
+        >
+          <div class="text-center">
+            <p class="text-gray-700 text-sm sm:text-base font-medium mb-4">
+              Thời gian ưu đãi chỉ còn:
+            </p>
+
+            <div class="flex justify-center space-x-3 sm:space-x-4 mb-4">
+              <div class="text-center">
+                <div
+                  class="countdown-circle w-12 h-12 sm:w-14 sm:h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <span
+                    class="text-white font-bold text-lg sm:text-xl"
+                    id="days"
+                    >00</span
+                  >
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Ngày</p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="countdown-circle w-12 h-12 sm:w-14 sm:h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <span
+                    class="text-white font-bold text-lg sm:text-xl"
+                    id="hours"
+                    >11</span
+                  >
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Giờ</p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="countdown-circle w-12 h-12 sm:w-14 sm:h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <span
+                    class="text-white font-bold text-lg sm:text-xl"
+                    id="minutes"
+                    >59</span
+                  >
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Phút</p>
+              </div>
+
+              <div class="text-center">
+                <div
+                  class="countdown-circle w-12 h-12 sm:w-14 sm:h-14 bg-red-600 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <span
+                    class="text-white font-bold text-lg sm:text-xl"
+                    id="seconds"
+                    >25</span
+                  >
+                </div>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Giây</p>
+              </div>
+            </div>
+
+            <p class="text-red-600 text-sm sm:text-base font-semibold">
+              Ưu đãi dành cho
+              <span class="text-red-700 font-bold">30</span> khách hàng đầu tiên
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div>
+              <input
+                type="text"
+                placeholder="Họ và tên"
+                class="form-input w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
+              />
+            </div>
+
+            <div>
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                class="form-input w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
+              />
+            </div>
+
+            <div>
+              <select
+                class="form-input w-full px-4 py-3 sm:py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base text-gray-700 bg-white"
+              >
+                <option value="">Combo</option>
+                <option value="combo1">Combo 1 - 1 hộp (30 ngày)</option>
+                <option value="combo2">Combo 2 - 2 hộp (60 ngày)</option>
+                <option value="combo3">Combo 3 - 3 hộp (90 ngày)</option>
+                <option value="combo4">Combo 4 - 6 hộp (180 ngày)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <button
+              class="buy-button w-full py-4 sm:py-5 text-white font-bold text-lg sm:text-xl rounded-2xl shadow-lg relative overflow-hidden"
+            >
+              <span class="relative z-10">MUA NGAY</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="h-8"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-dark text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h3 class="text-2xl font-bold mb-4 flex items-center space-x-3">
+              <img
+                src="./Images/logo.png"
+                alt="Rexri Logo"
+                class="w-10 h-10 sm:w-12 sm:h-12 object-contain floating-animation"
+              />
+              <span class="text-yellow-300">Rexri</span>
+            </h3>
+            <p class="text-blue-200 mb-4">Mang vẻ đẹp Hàn Quốc đến với bạn</p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition-all duration-300 hover:scale-110"
+              >
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition-all duration-300 hover:scale-110"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="text-blue-200 hover:text-yellow-300 transition-all duration-300 hover:scale-110"
+              >
+                <i class="fab fa-youtube text-2xl"></i>
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 sm:col-span-2 lg:col-span-2 gap-8">
+            <div>
+              <h4 class="font-bold mb-4">Sản phẩm</h4>
+              <ul class="space-y-2 text-blue-200">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-yellow-300 transition-colors duration-300"
+                    >Dr. All-in-One Serum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-yellow-300 transition-colors duration-300"
+                    >Rexri Creative Serum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-yellow-300 transition-colors duration-300"
+                    >Rexri Creative Toner</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-yellow-300 transition-colors duration-300"
+                    >Rexri Creative Cream</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sm:col-span-2 lg:col-span-1">
+            <h4 class="font-bold mb-4">Chứng nhận</h4>
+            <p class="text-blue-200 text-sm mb-2">
+              Số tiếp nhận phiếu công bố: 209514/23/CBMP-QLD
+            </p>
+            <p class="text-blue-200 text-sm">
+              Sản phẩm được nhập khẩu và phân phối chính thức từ Hàn Quốc
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-t border-blue-600 mt-8 pt-8 text-center text-blue-200"
+        >
+          <p>
+            &copy; 2025 Rexri. Design By
+            <a
+              href="https://www.facebook.com/w.fourtech"
+              class="text-yellow-300 hover:underline transition-colors duration-300"
+              >W-FOUR TECH</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Enhanced Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 space-y-4">
+      <a
+        href="tel:+84928132626"
+        class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 pulse-glow floating-animation"
+      >
+        <i class="fas fa-phone text-xl"></i>
+      </a>
+      <a
+        href="#"
+        class="bg-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition-all duration-300 floating-animation"
+        style="animation-delay: 0.2s"
+      >
+        <i class="fab fa-facebook-messenger text-xl"></i>
+      </a>
+      <button
+        onclick="scrollToTop()"
+        class="bg-blue-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-blue-dark transition-all duration-300 floating-animation"
+        style="animation-delay: 0.4s"
+      >
+        <i class="fas fa-arrow-up text-xl"></i>
+      </button>
+    </div>
+
+    <script>
+      // Countdown Timer
+      function updateCountdown() {
+        const targetTime =
+          new Date().getTime() +
+          11 * 60 * 60 * 1000 +
+          59 * 60 * 1000 +
+          25 * 1000;
+
+        function update() {
+          const now = new Date().getTime();
+          const distance = targetTime - now;
+
+          if (distance > 0) {
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            const minutes = Math.floor(
+              (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days
+              .toString()
+              .padStart(2, "0");
+            document.getElementById("hours").textContent = hours
+              .toString()
+              .padStart(2, "0");
+            document.getElementById("minutes").textContent = minutes
+              .toString()
+              .padStart(2, "0");
+            document.getElementById("seconds").textContent = seconds
+              .toString()
+              .padStart(2, "0");
+          } else {
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            document.getElementById("seconds").textContent = "00";
+          }
+        }
+
+        update();
+        setInterval(update, 1000);
+      }
+
+      // Smooth scroll to top
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Form submission handler
+      document
+        .querySelector(".buy-button")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const name = document.querySelector(
+            'input[placeholder="Họ và tên"]'
+          ).value;
+          const phone = document.querySelector(
+            'input[placeholder="Số điện thoại"]'
+          ).value;
+          const combo = document.querySelector("select").value;
+
+          if (!name || !phone || !combo) {
+            alert("Vui lòng điền đầy đủ thông tin!");
+            return;
+          }
+
+          alert("Đặt hàng thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.");
+        });
+
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Initialize when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        updateCountdown();
+
+        // Observe all animated elements
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
+</html>
